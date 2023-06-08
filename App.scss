@@ -1,0 +1,72 @@
+.app {
+    padding: 20px;
+  
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #f1f1f1;
+  
+      .brand {
+        font-size: 24px;
+      }
+  
+      .get-users-btn {
+        padding: 8px 16px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  
+    .user-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+  
+      .user-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: white;
+  
+        .avatar {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          margin-bottom: 10px;
+        }
+  
+        .name {
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+  
+        .email {
+          font-size: 14px;
+          color: #777;
+        }
+      }
+    }
+  
+    .loader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      font-size: 24px;
+    }
+  }
+  
